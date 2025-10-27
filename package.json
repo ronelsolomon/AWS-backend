@@ -1,0 +1,23 @@
+{
+  "name": "aws-serverless-backend",
+  "version": "1.0.0",
+  "description": "Advanced AWS Serverless Backend with Cognito, API Gateway, Lambda, and DynamoDB",
+  "private": true,
+  "scripts": {
+    "deploy": "cdk deploy --all",
+    "destroy": "cdk destroy --all",
+    "synth": "cdk synth",
+    "test": "pytest",
+    "lint": "pylint **/*.py"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2.0.0",
+    "aws-cdk-lib": "^2.0.0",
+    "constructs": "^10.0.0"
+  },
+  "dependencies": {
+    "@aws-solutions-constructs/aws-apigateway-lambda": "^2.0.0",
+    "@aws-solutions-constructs/aws-cognito-apigateway-lambda": "^2.0.0",
+    "@aws-solutions-constructs/aws-dynamodb-lambda": "^2.0.0"
+  }
+}
